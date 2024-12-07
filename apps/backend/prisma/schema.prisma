@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Picture {
+  id          Int    @id
+  url         String
+  coordinates Json
+}
+
+model Charachter {
+  name        String @id
+  picUrl      String
+  description String
+}
+
+model PlayerTimes {
+  id       Int      @id @default(autoincrement())
+  nickname String   @default("Anonymous")
+  time     Int
+  date     DateTime @default(now())
+}

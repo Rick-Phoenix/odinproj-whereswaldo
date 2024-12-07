@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.h1 {
+  color: red;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.imgDiv {
+  width: max-content;
+  position: relative;
+
+  .gamePic {
+    display: block;
+  }
+}
+
+.circle {
+  background-color: transparent;
+  border: 5px solid red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  position: fixed;
+  top: 4rem;
+  left: 4rem;
+  background-color: rgb(80 23 23);
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 5px solid red;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  select {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    width: 50%;
+  }
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td {
+    border: 2rem solid transparent;
+  }
+}
